@@ -17,19 +17,20 @@ footer.page-footer {
 	background-color:#0074D9;
 }
 
-.container {
-	margin-top:5%;
-	height: 100px;
-}
-
-.container h2 {
+h2 {
 	text-align:center;
 	font-weight: 200;
 }
 
+.aboutme {
+	height: 550px; 
+	background-color: #eceff1;
+}
+
 .card {
+	margin-top:100px;
 	width: 30%;
-	margin-left:10%;
+	margin-left:5%;
 }
 
 .centering {
@@ -40,5 +41,26 @@ footer.page-footer {
 
 h1 {
 	text-align:center;
+}
+
+.projects ul {
+	width: 50%;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+.projects {
+	background-color: #eceff1;
+	display:flex;
+	align-items:center;
+	justify-content: center
+
+}
+
+.contact {
+	background-color: #eceff1;
+	display:flex;
+	align-items:center;
+	justify-content: center
 
 }
