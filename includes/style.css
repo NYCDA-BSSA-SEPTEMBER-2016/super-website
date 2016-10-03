@@ -1,9 +1,22 @@
 .valign-wrapper h1 {
 	margin: 0 auto;
 	font-weight: 200;
+	margin-top: 30px;
 }
 
 #header {
-	background-color: grey;
+	background-color: #DDDDDD;
 	height: 500px;
+}
+
+.nav-wrapper {
+	background-color:#0074D9;
+}
+
+footer.page-footer {
+	background-color:#0074D9;
+}
+
+ul.nav-mobile, li {
+	text-align:center;
 }
