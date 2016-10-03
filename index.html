@@ -6,7 +6,7 @@
       	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       	<!--Import materialize.css-->
       	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-      		<link rel="stylesheet" type="text/css" href="includes/style.css">
+      	<link rel="stylesheet" type="text/css" href="includes/style.css">
 
       	<!--Let browser know website is optimized for mobile-->
       	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,7 +15,7 @@
 	<div class="navbar-fixed">	
 		<nav>
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo center"><i class="material-icons">home</i></a>
+				<a href="#" class="brand-logo left"><i class="material-icons">home</i></a>
 					<ul id="nav-mobile" class="right"> 
 						<li><a href ="index.html">Home</a></li>
 						<li><a href ="aboutme.html">About</a></li>
@@ -25,11 +25,50 @@
 			</div>
 		</nav>
 	</div>
-	<div id="header">
-		<div class ="valign-wrapper">
-			<h1> Bram Pijper </h1>
+	
+	<div id="pagewrapper"
+		<div id="logo">
+			<h1> Bram's Portfolio </h1>
 		</div>
-	</div>
+			<div id="header"> 
+				<img class="responsive-img" src="pictures/test.jpg">
+			</div>
+			<div class="aboutme">
+				<div class="container">
+					<h2> About Me </h2>
+				</div>
+				<div class="centering">
+		  			<div class="card small">
+		    			<div class="card-image waves-effect waves-block waves-light">
+		      				<img class="activator" src="pictures/group_photo.jpg">
+		   				</div>
+		   				<div class="card-content">
+		      				<span class="card-title activator grey-text text-darken-4">Ecological Farm<i class="material-icons right">more_vert</i></span>
+		      				<p><a href="http://hornudden.net/8456-2/">Hornuddens Website</a></p>
+		    			</div>
+		    			<div class="card-reveal">
+		    				<span class="card-title grey-text text-darken-4">Hornuddens Farm<i class="material-icons right">close</i></span>
+		    				<p>Ecological farming is one of the things I'm interested in. </p>
+		    				<p>I worked as a volunteer on a farm in Sweden for 4 months.</p>
+		    			</div>
+		  			</div>
+		  			<div class="card small">
+		    			<div class="card-image waves-effect waves-block waves-light">
+		      				<img class="activator" src="pictures/code.jpg">
+		   				</div>
+		   				<div class="card-content">
+		      				<span class="card-title activator grey-text text-darken-4">Coding<i class="material-icons right">more_vert</i></span>
+		      				<p><a href="http://hornudden.net/8456-2/">Random Link!</a></p>
+		    			</div>
+		    			<div class="card-reveal">
+		    				<span class="card-title grey-text text-darken-4">Hornuddens Farm<i class="material-icons right">close</i></span>
+		    				<p>Ecological farming is one of the things I'm interested in. </p>
+		    				<p>I worked as a volunteer on a farm in Sweden for 4 months.</p>
+		    			</div>
+		  			</div>
+		  		</div>
+			</div>
+	</div> 
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
@@ -49,5 +88,6 @@
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<script type="text/javascript" src="includes/main.js"></script>
 </body>
 </html>
