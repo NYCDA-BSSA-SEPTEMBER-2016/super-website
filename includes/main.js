@@ -14,9 +14,6 @@ $('.scrollspy').scrollSpy();
 
 }); 
 
-
-
-
 (function(){
     var words = [
         'Velkommen',
@@ -31,5 +28,4 @@ $('.scrollspy').scrollSpy();
             $(this).html(words[i=(i+1)%words.length]).fadeIn();
         });
     }, 2000);
-        
 })();
