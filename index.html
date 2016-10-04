@@ -15,7 +15,7 @@
 	<div class="navbar-fixed">	
 		<nav>
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo left"><i class="material-icons">home</i></a>
+				<a href="#" class="brand-logo left section scrollspy" id="#header"><i class="material-icons">home</i></a>
 					<ul id="nav-mobile" class="right"> 
 						<li><a href ="#header">Home</a></li>
 						<li><a href ="#about">About</a></li>
@@ -36,11 +36,14 @@
     </div>
 	</div>
 		<div class="pagewrapper">
-				<h2> About Me </h2>
+		<div id="imageCenter">
+			<img class="responsive-img circle" src="pictures/profile.jpg"> 
+			</div>
+				<h2> About Me </h2> 
 					<div id="about" class="section scrollspy">
 					<div class="aboutme">
 						<div class="centering">
-				  			<div class="card small hoverable">
+				  			<div class="card small hoverable col s12 m6 l6" style="display: inline-block;">
 				    			<div class="card-image waves-effect waves-block waves-light">
 				      				<img class="activator" src="pictures/group_photo.jpg">
 				   				</div>
@@ -50,10 +53,10 @@
 				    			</div>
 				    			<div class="card-reveal">
 				    				<span class="card-title grey-text text-darken-4">Scandinavia<i class="material-icons right">close</i></span>
-				    				<p>I love traveling, Especially mountains! This makes Scandinavia one of favorite destinations. <br><br> During my vacation in 2016 I went traveling through Sweden and ended up working as a volunteer on an ecological farm for 3 months.<br><br> I learned a lot about growing vegetables and fruits, which made me want to have my own little garden in the near future. </p> 
+				    				<p>I love traveling, especially to countries with a lot of mountains! This makes Scandinavia one of favorite destinations. <br><br> During my vacation in 2016 I went traveling through Sweden and ended up working as a volunteer on an ecological farm for 3 months.<br><br> I learned a lot about growing vegetables and fruits, which made me want to have my own little garden in the near future. </p> 
 				    			</div>
 				  			</div>
-				  			<div class="card small hoverable">
+				  			<div class="card small hoverable col s12 m6 l6" style="display: inline-block;">
 				    			<div class="card-image waves-effect waves-block waves-light">
 				      				<img class="activator" src="pictures/jsimage.jpg">
 				   				</div>
@@ -68,7 +71,7 @@
 				    				<p>Programing is fun, because I like problem solving + it's a lot more creative than most people think! </p>  
 				    			</div>
 				  			</div>
-				  			<div class="card small hoverable">
+				  			<div class="card small hoverable col s12 m6 l6" style="display: inline-block;">
 				    			<div class="card-image waves-effect waves-block waves-light">
 				      				<img class="activator" src="pictures/sailboat.png">
 				   				</div>
@@ -78,25 +81,20 @@
 				    			<div class="card-reveal">
 				    				<span class="card-title grey-text text-darken-4">Being Active<i class="material-icons right">close</i></span>
 				    				<p>Doing any kind of sport makes me happy; It gives me new energy and makes my head clear. </p>
-				    				<p>In the winter I especially like ice skating, skiing and hiking through snowy landscapes. </p>
+				    				<p>In the winter I like ice skating, skiing and hiking through snowy landscapes. </p>
 				    				<p>During the summer I like being on the water; wether it's (wind)surfing, sailing, swimming or just relaxing on an air matress</p>
 				    			</div>
 				  			</div>
 				  		</div>
+
 					</div>
 			</div>
-			<div id="myProjects" class="section scrollspy"> 
 			<h2> Projects </h2>
+				<div id="myProjects" class="section scrollspy"> 
 				<div class="projects">
 					<ul class="collapsible" data-collapsible="accordion">
 						<li>
-							<div class="collapsible-header active"><i class="material-icons">book</i>First Project: Printing a book in JS!</div>
-							<div class="collapsible-body">
-								<p>This was one of the first excercise we had to program in Javascript. </p>
-							</div>
-						</li>
-						<li>
-							<div class="collapsible-header"><i class="material-icons">nature</i>Graduation Project</div>
+							<div class="collapsible-header active"><i class="material-icons">nature</i>Graduation Project</div>
 							<div class="collapsible-body">
 								<p>My graduation project was focused on designing a mobile game concept for the Waddenvereniging (nature organization).
 								With the support of the people they try and protect the Waddengebied (nature reserve). My focus was to get people motivated to join the organization by playing a mobile game. <br><br> 
@@ -105,7 +103,16 @@
 
 							</div>
 	    				</li>
-	    				<li>
+						<li>
+							<div class="collapsible-header"><i class="material-icons">book</i>First Project: Different JS exercises</div>
+							<div class="collapsible-body">
+								<p>This was a collection of exercises to help us understand functions and objects in Javascript. For example we had to program a function that would reverse a string, or would print only the last letter of a string.  <br><br>
+								<a href="https://github.com/brampijper/javascript-review/blob/master/Javascript%20Review_Bram/main.js" target="_blank">View Code</a>
+								</p>
+							</div>
+						</li>
+						
+	    				<!-- <li>
 	      					<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
 	      					<div class="collapsible-body">
 		      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -115,7 +122,7 @@
 		      					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		      					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	      					</div>
-	    				</li>
+	    				</li> -->
 	  				</ul>
 				</div>
 			</div>
@@ -126,50 +133,43 @@
 							<div class="chip">
 								<a href="https://www.facebook.com/bram.pijper" target="_blank">
 			   						<img src="pictures/facebook.png" alt="Contact Person">
-			   					 	Message me on FB
+			   						<div class="hideText">Message me</div>
 			   					</a>
 			  				</div>
 			  				<div class="chip">
 			  					<a href="mailto:brampijper@gmail.com?Subject=Hello%20again" target="_top">
 			  						<img src="pictures/gmail.png" alt="Contact Person">
-			   						Send an email
+			   						<div class="hideText">Send an email</div>
 			   					</a>
 			   				</div>
 			   				<div class="chip">
 			   					<a href="https://nl.linkedin.com/in/bram-pijper-6a9306129" target="_blank">
 			   						<img src="pictures/linkedin.png" alt="Contact Person">
-			   						View my LinkedIn profile
+			   						<div class="hideText">LinkedIn profile</div>
 			   					</a>
 			   				</div>
 			   				<div class="chip">
 			   					<a href="https://github.com/brampijper" target="_blank">
 			   						<img src="pictures/octocat.png" alt="Contact Person">
-			   						Github profile
+			   						<div class="hideText">Github profile</div>
 			   					</a>
 			   				</div>
 			   			</div>
 					</div>
 			</div> 
 				<footer class="page-footer">
-					<div class="container">
-						<div class="row">
-							<div class="col l6 s12">
-								<h5 class="white-text">Find me online! </h5>
-				                	<i class="material-icons">add</i>
-				            </div>
-				        </div>
-				    </div>
 				    <div class="footer-copyright">
 				    	<div class="container">
-				    		Created in Oct 2016
+				    		Created in Oct 2016 > A massive thank you to the Material Design Framework
 				        </div>
 				    </div>
 				</div>
 			</footer>
 
 		<!--Import jQuery before materialize.js-->
-		<script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="includes/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 		<script type="text/javascript" src="includes/main.js"></script>
+		<script type="text/javascript" src="includes/jquery.color-2.1.2.min.js"></script>
 </body>
 </html>
