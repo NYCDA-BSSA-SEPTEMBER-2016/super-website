@@ -70,7 +70,7 @@ h2 {
 }
 
 #welcomeText {
-	background-color:#cfd8dc;
+/*	background-color:#cfd8dc;*/
 	height:300px;
 }
 
@@ -78,4 +78,10 @@ h1 {
 	display:flex;
 	align-items:center;
 	justify-content: center;
+}
+
+#header {
+		background-color: #cfd8dc;
+
+/*	background-color:yellow; */
 }
